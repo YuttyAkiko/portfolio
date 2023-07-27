@@ -1,34 +1,32 @@
-.fa-code {
-    color: var(--green-6);
-}
-
 header {
     align-items: center;
     background-color: var(--blue-10);
-    display: flex;
     height: 90px;
-    justify-content: space-between;
     position: fixed;
     width: 100%;
 }
 
-header div {
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5%;
+}
+
+header .container div {
     align-items: center;
     display: flex;
     font-size: 22px;
     font-weight: 400;
-    padding-left: 5%;
 }
 
-header div i {
+header .container div i {
     padding-top: 0.5rem;
 }
 
-header div p {
+header .container div p {
     padding-left: 0.4rem;
 }
 
-/* Ínicio dos estilos da fonte do logotipo */
 header div p:nth-child(2) {
     color: var(--white);
     padding-left: 0.8rem;
@@ -38,7 +36,18 @@ header div p:nth-child(2) {
 header div p:nth-child(3), .underline {
     color: var(--fuchsia-5);
 }
-/* fim */
+
+header .container nav a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 0.5rem;
+}
+
+header .container nav a:hover {
+    color: var(--green-5);
+}
 
 .underline {
     animation: animate 1.5s linear infinite;
@@ -56,25 +65,6 @@ header div p:nth-child(3), .underline {
     }
 }
 
-/* Menu de navegação */
-header nav {
-    padding-right: 5%;
-}
-
-header nav a {
-    text-decoration: none;
-    color: var(--white);
-    font-size: 14px;
-    font-weight: 600;
-    padding: 0 0.5rem;
-}
-
-header nav a:hover {
-    color: var(--green-5);
-}
-/* fim */
-
-/* Botão contato no fim do menu de navegação */
 header #contact {
     background-color: var(--green-4);
     border-radius: 5px;
@@ -90,4 +80,3 @@ header #contact:hover {
     text-shadow: none;
     transition: 400ms;
 }
-/* fim */

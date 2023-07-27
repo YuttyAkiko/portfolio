@@ -11,6 +11,7 @@
     --gray-2: #E4E4E7;
     --green-4: #4ADE80;
     --green-5: #00ff57;
+    --green-6: #16bb29;
     --indigo-9: #312E81;
     --purple-9: #581C87;
     --rose-4: #FDA4AF;
@@ -39,7 +40,9 @@
 .font-family-victor {
     font-family: 'Victor Mono', monospace;
 }
+/* fim */
 
+/* Backgrounds */
 .gradient-1 {
     background: linear-gradient(150deg, var(--blue-9) 40%,  var(--fuchsia-9), var(--rose-7));
 }
@@ -54,3 +57,11 @@
 .gradient-3 {
     background: linear-gradient(to right, var(--rose-7), var(--fuchsia-8), var(--cyan-4));
 }
+/* fim */
+
+/* Conteúdo */
+main {
+    height: auto;
+    padding-top: 90px;
+}
+/* fim */
