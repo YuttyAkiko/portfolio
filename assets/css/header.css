@@ -52,11 +52,11 @@ header div p:nth-child(3), .underline {
 /* fim */
 
 /* Menu de navegação */
-header nav {
+.menu {
     padding-right: 5%;
 }
 
-header nav a {
+.menu a {
     text-decoration: none;
     color: var(--white);
     font-size: 14px;
@@ -64,8 +64,24 @@ header nav a {
     padding: 0 0.5rem;
 }
 
-header nav a:hover {
+.menu a:hover {
     color: var(--green-5);
+}
+
+#hideMenu {
+    display: none;
+    animation: fadein 2s alternate;
+    -webkit-animation: fadein 2s alternate;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 /* fim */
 
@@ -89,12 +105,28 @@ header #contact:hover {
 
 /* Responsividade */
 @media screen and (max-width: 1024px) {
-    header nav {
+    .menu {
         display: none;
     }
 
     .fa-bars {
+        /* Ícone do SideBar */
         display: block;
+        padding: 0 3rem 0 1rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header div {
+        font-size: 18px;
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .fa-bars {
+        /* Ícone do SideBar */
+        padding: 0 2rem 0 1rem;
     }
 }
 /* fim */

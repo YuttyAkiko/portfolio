@@ -75,7 +75,6 @@ main {
 
 .fa-bars {
     color: var(--white);
-    padding: 0 4rem;
     display: none;
 }
 

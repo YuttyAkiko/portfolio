@@ -156,12 +156,13 @@
         display: flex;
         justify-content: center;
         margin: 0 10%;
+        width: 100%;
     }
     
     .front img,
     .back img{
         /* Minha foto de perfil */
-        height: auto;
+        height: 100%;
         width: 100%;
     }
 }
