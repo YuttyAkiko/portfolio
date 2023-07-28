@@ -1,6 +1,6 @@
 /* Ínicio do texto de apresentação */
 .about {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     height: auto;
     justify-content: space-around;
@@ -9,7 +9,7 @@
 }
 
 .about article {
-    display: flex-start;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
@@ -19,7 +19,7 @@
 .about h1 {
     color: var(--yellow-2);
     font-weight: 600;
-    padding-bottom: 0.5rem;
+    padding: 2rem 0 0.5rem;
 }
 
 .about h2 {
@@ -47,6 +47,7 @@
 .about article nav {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -70,12 +71,11 @@
     text-shadow: none;
     transition: 600ms;
 }
-
-.fa-paper-plane::before {
-    color: var(--blue-10);
-    margin-left: 0.5rem;
-}
 /* fim */
+
+.social_networking {
+    margin: 0 1rem;
+}
 
 .about article nav span {
     color: var(--white);
@@ -85,19 +85,84 @@
     /* Redes Sociais */
     border: solid 1px var(--rose-4);
     border-radius: 100%;
-    padding: 1rem;
+    padding: 0.7rem 0.2rem 0.7rem 0.7rem;
     margin: 0.5rem;
+    text-decoration: none;
 }
 
-.about figure {
+.about article nav a:nth-child(5) {
+    /* link do GitHub */
+    padding-right: 0.6rem;
+}
+
+.flip_container {
     background-color: transparent;
     border: solid 1rem var(--rose-4);
     border-radius: 100%;
     padding: 1rem;
-}
-
-.about img {
-    border-radius: 100%;
+    perspective: 1000px;
     height: 400px;
     width: 400px;
 }
+
+.front img, 
+.back img{
+    /* Minha foto de perfil */
+    border-radius: 100%;
+    height: 400px;
+    position: absolute;
+    width: 400px;
+}
+
+/* Efeito de animação da foto de perfil */
+.flipper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 5s;
+}
+
+.flip_container:hover .flipper {
+    transform: rotateY(720deg);
+}
+/* fim */
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+    .about {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .about article {
+        align-items: center;
+        width: 80%;
+    }
+
+    .about p {
+        text-align: justify;
+    }
+
+    .about article nav {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .flip_container {
+        align-items: center;
+        border: solid 0.5rem var(--rose-4);
+        display: flex;
+        justify-content: center;
+        margin: 0 10%;
+    }
+    
+    .front img,
+    .back img{
+        /* Minha foto de perfil */
+        height: auto;
+        width: 100%;
+    }
+}
+/* fim */

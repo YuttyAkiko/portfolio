@@ -1,9 +1,22 @@
 footer {
     background-color: var(--blue-9);
     color: var(--gray-2);
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 500;
     height: auto;
+    justify-content: center;
     padding: 2rem 0;
     text-align: center;
-    font-weight: 500;
+    width: 100%;
+}
+
+footer span {
+    padding-left:0.5rem;
+}
+
+@media screen and (max-width: 526px) {
+    footer span {
+        margin-top: 1rem;
+    }
 }

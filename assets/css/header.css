@@ -1,7 +1,3 @@
-.fa-code {
-    color: var(--green-6);
-}
-
 header {
     align-items: center;
     background-color: var(--blue-10);
@@ -10,6 +6,7 @@ header {
     justify-content: space-between;
     position: fixed;
     width: 100%;
+    z-index: 999;
 }
 
 header div {
@@ -18,10 +15,6 @@ header div {
     font-size: 22px;
     font-weight: 400;
     padding-left: 5%;
-}
-
-header div i {
-    padding-top: 0.5rem;
 }
 
 header div p {
@@ -40,6 +33,7 @@ header div p:nth-child(3), .underline {
 }
 /* fim */
 
+/* Efeito de animação do underline no logo do cabeçalho */
 .underline {
     animation: animate 1.5s linear infinite;
 }
@@ -55,6 +49,7 @@ header div p:nth-child(3), .underline {
         opacity: 0;
     }
 }
+/* fim */
 
 /* Menu de navegação */
 header nav {
@@ -89,5 +84,17 @@ header #contact:hover {
     margin: 0 6px 6px 0;
     text-shadow: none;
     transition: 400ms;
+}
+/* fim */
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+    header nav {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block;
+    }
 }
 /* fim */

@@ -14,6 +14,7 @@
     --green-6: #16bb29;
     --indigo-9: #312E81;
     --purple-9: #581C87;
+    --red-6: #DC2626;
     --rose-4: #FDA4AF;
     --rose-7: #BE123C;
     --white: #fff;
@@ -63,5 +64,38 @@
 main {
     height: auto;
     padding-top: 90px;
+}
+/* fim */
+
+/* Ícones */
+.fa-code {
+    color: var(--green-6);
+    padding-top: 0.5rem;
+}
+
+.fa-bars {
+    color: var(--white);
+    padding: 0 4rem;
+    display: none;
+}
+
+.fa-instagram, 
+.fa-linkedin, 
+.fa-whatsapp, 
+.fa-github {
+    color: var(--white);
+    width: 25px;
+    height: 25px;
+}
+
+.fa-instagram:hover, 
+.fa-linkedin:hover, 
+.fa-whatsapp:hover, 
+.fa-github:hover {
+    color: var(--rose-4);
+}
+
+.fa-heart {
+    color: var(--red-6);
 }
 /* fim */
