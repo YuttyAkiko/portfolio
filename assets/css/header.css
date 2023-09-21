@@ -145,10 +145,10 @@ header div p:nth-child(3),
         position: absolute;
         top: 90px;
         width: 100%;
-        animation: fadeinout 1.6s;
+        animation: fadein 1s;
     }
 
-    @keyframes fadeinout {
+    @keyframes fadein {
         from {
             top: -300px;
         }
