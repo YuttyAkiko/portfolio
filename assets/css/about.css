@@ -5,7 +5,7 @@
     height: auto;
     justify-content: space-around;
     width: 100%;
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 .about article {
@@ -19,7 +19,7 @@
 .about h1 {
     color: var(--yellow-2);
     font-weight: 600;
-    padding: 2rem 0 0.5rem;
+    padding: 0 0 0.5rem;
 }
 
 .about h2 {
@@ -44,37 +44,43 @@
 }
 /* fim */
 
-.about article nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
 /* Botão CONTRATE-ME */
-.about article nav a:nth-child(1) {
+.hire-me:nth-child(1) {
     border: none;
     border-radius: 50px;
     color: var(--white);
     font-weight: 600;
     padding: 1.5rem;
-    margin: 3rem 0;
+    margin: 3px 0px 0px 5px;
     text-align: center;
     text-decoration: none;
     text-shadow: 0 0 8px var(--black);
 }
 
-.about article nav a:nth-child(1):hover {
+.hire-me:nth-child(1):hover {
     background: var(--green-4);
+    box-shadow: 3px 5px var(--white);
     color: var(--blue-10);
+    margin: 0 5px 3px 0px;
     text-shadow: none;
     transition: 600ms;
 }
 /* fim */
 
-.social_networking {
-    margin: 0 1rem;
+/* Redes Sociais */
+.about article nav {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.social-networking {
+    display: flex;
+    margin: 2rem 2rem 0;
 }
 
 .about article nav span {
@@ -82,7 +88,6 @@
 }
 
 .about article nav a {
-    /* Redes Sociais */
     border: solid 1px var(--rose-4);
     border-radius: 100%;
     padding: 0.7rem 0.2rem 0.7rem 0.7rem;
@@ -90,80 +95,125 @@
     text-decoration: none;
 }
 
-.about article nav a:nth-child(5) {
+.about article nav a:nth-child(4) {
     /* link do GitHub */
     padding-right: 0.6rem;
 }
+/* fim */
 
-.flip_container {
+/* Box da imagem de perfil */
+.flip {
+    animation: flip-inverse 8s;
     background-color: transparent;
     border: solid 1rem var(--rose-4);
     border-radius: 100%;
-    padding: 1rem;
-    perspective: 1000px;
     height: 400px;
+    padding: 1rem;
     width: 400px;
 }
 
-.front img, 
-.back img{
-    /* Minha foto de perfil */
+/* Minha foto de perfil */
+.flip img{
+    animation: flip 6s;
     border-radius: 100%;
     height: 400px;
-    position: absolute;
     width: 400px;
 }
 
 /* Efeito de animação da foto de perfil */
-.flipper {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: 5s;
+/* .flip img:hover {
+    cursor: pointer;
+    transform: rotateY(540deg);
+} */
+@keyframes flip {
+    0% {
+    } 
+    
+    20% {
+        transform: rotateY(180deg);
+    }
 }
 
-.flip_container:hover .flipper {
-    transform: rotateY(720deg);
+@keyframes flip-inverse {
+    0% {
+    } 
+    
+    50% {
+        transform: rotateY(180deg);
+    }
 }
 /* fim */
 
 /* Responsividade */
+@media screen and (min-width: 1440px) {
+    .about {
+        justify-content: space-evenly;
+        padding: 5rem 0;
+    }
+
+    .about article nav {
+        justify-content: space-between;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .about {
         align-items: center;
         flex-direction: column-reverse;
     }
 
+    .about h1 {
+        padding-top: 2rem;
+        text-align: center;
+    }
+
     .about article {
         align-items: center;
         width: 80%;
     }
-
+    
     .about p {
         text-align: justify;
     }
+}
+
+@media screen and (max-width: 600px) {
+    .about h2, 
+    .about h3 {
+        font-size: 30px;
+        text-align: center;
+    }
 
     .about article nav {
+        height: 200px;
+    }
+    
+    .flip {
+        border: solid 0.5rem var(--rose-4);
+        height: 300px;
+        margin: 0 10%;
+        width: 300px;
+    }
+    
+    .flip img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .social-networking {
+        align-items: center;
         flex-direction: column;
+        flex-wrap: wrap;
+        height: 100px;
+        justify-content: space-around;
+        margin: 0;
     }
 }
 
-@media screen and (max-width: 500px) {
-    .flip_container {
-        align-items: center;
-        border: solid 0.5rem var(--rose-4);
-        display: flex;
-        justify-content: center;
-        margin: 0 10%;
-        width: 100%;
-    }
-    
-    .front img,
-    .back img{
-        /* Minha foto de perfil */
-        height: 100%;
-        width: 100%;
+@media screen and (max-width:375px) {
+    .flip, .flip img {
+        height: 250px;
+        width: 250px;
     }
 }
 /* fim */

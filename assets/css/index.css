@@ -68,14 +68,16 @@ main {
 /* fim */
 
 /* Ícones */
-.fa-code {
+.i-code {
     color: var(--green-6);
     padding-top: 0.5rem;
+    width: 40px;
 }
 
-.fa-bars {
-    color: var(--white);
-    display: none;
+@media (max-width: 425px) {
+    .i-code {
+        width: 30px;
+    }
 }
 
 .fa-instagram, 
@@ -96,5 +98,17 @@ main {
 
 .fa-heart {
     color: var(--red-6);
+}
+/* fim */
+
+/* emoji */
+.emoji-hand {
+    width: 60px;
+}
+
+@media screen and (max-width: 600px) {
+    .emoji-hand {
+        width: 30px;
+    }
 }
 /* fim */

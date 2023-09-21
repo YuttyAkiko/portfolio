@@ -1,11 +1,11 @@
-function showMenu() {
-    document.getElementById('showMenu').classList.toggle('fa-bars');
-}
+function hideMenu(x) {
+  let menu = document.getElementById('hide-menu');
 
-window.onclick = (event) => {
-    let menu = document.getElementsByClassName('fa-bars');
-    
-    if(event.targe == menu) {
-        menu.style.display = none;
-    }
+  x.classList.toggle('change');
+
+  if (menu.style.display == 'flex') {
+    menu.style.display = 'none';
+  } else {
+    menu.style.display = 'flex';
+  }
 }
