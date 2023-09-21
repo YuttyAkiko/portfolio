@@ -1,0 +1,39 @@
+.skills {
+  padding: 2rem;
+}
+
+.skills h1 {
+  font-size: 20px;
+  text-align: center;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.skills div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.skills article {
+  margin: 1rem;
+  padding: 1rem;
+  text-align: justify;
+  width: 220px;
+  /* From https://css.glass */
+  /* Efeito glass */
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* fim */
+}
+
+.skills p {
+  padding-top: 1rem;
+  text-align: center;
+}
+
