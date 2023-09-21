@@ -213,6 +213,10 @@
 }
 
 @media screen and (max-width: 600px) {
+    .about h1 {
+        line-height: 22px;
+    }
+
     .about h2, 
     .about h3 {
         font-size: 30px;
