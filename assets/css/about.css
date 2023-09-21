@@ -18,9 +18,6 @@
 
 .about h1 {
     animation: title 2s;
-    color: var(--yellow-2);
-    font-weight: 600;
-    padding: 0 0 0.5rem;
 }
 
 @keyframes title {
@@ -54,10 +51,6 @@
 
 .about p {
     animation: text 2s;
-    color: var(--gray-2);
-    line-height: 1.5rem;
-    font-size: 1rem;
-    font-weight: 300;
 }
 
 /* Animação das tags h3 e p da classe=about */
@@ -153,7 +146,7 @@
 
 /* Minha foto de perfil */
 .flip img{
-    animation: photo 4s;
+    animation: photo 2.1s;
     border-radius: 100%;
     height: 400px;
     width: 400px;
@@ -162,13 +155,11 @@
 
 /* Efeito de animação da foto de perfil */
 @keyframes photo {
-    0% {
+    from {
         transform: translate(600px);
-    }
-    20% {
         transform: scale(0, 0);
     }
-    50% {
+    to {
         transform: scale(1, 1);
     }
 }
@@ -213,6 +204,10 @@
 }
 
 @media screen and (max-width: 600px) {
+    .about h1 {
+        line-height: 22px;
+    }
+
     .about h2, 
     .about h3 {
         font-size: 30px;

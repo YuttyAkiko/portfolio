@@ -41,6 +41,19 @@
 .font-family-victor {
     font-family: 'Victor Mono', monospace;
 }
+
+.title {
+    color: var(--yellow-2);
+    font-weight: 600;
+    padding: 0 0 0.5rem;
+}
+
+.text {
+    color: var(--gray-2);
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
 /* fim */
 
 /* Backgrounds */
@@ -62,6 +75,7 @@
 
 /* Conteúdo */
 main {
+    background-color: var(--blue-9);
     height: auto;
     padding-top: 90px;
 }
@@ -102,12 +116,20 @@ main {
 /* fim */
 
 /* emoji */
-.emoji-hand {
+.emoji-hand,
+.emoji-smile,
+.emoji-handshake,
+.emoji-paper,
+.emoji-pen {
     width: 60px;
 }
 
 @media screen and (max-width: 600px) {
-    .emoji-hand {
+    .emoji-hand,
+    .emoji-smile,
+    .emoji-handshake,
+    .emoji-paper,
+    .emoji-pen {
         width: 30px;
     }
 }
