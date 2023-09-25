@@ -1,0 +1,24 @@
+{
+  "skills": [
+    {
+      "id": 1, 
+      "image": "https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f600.png", 
+      "text": "Tenho boa comunicação, liderança e organização. Sendo assim, fui selecionada através de votação para ser representante de turma no curso de Análise e Desenvolvimento de Sistemas na Escola SENAI."
+    },
+    {
+      "id": 2, 
+      "image": "https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f91d.png", 
+      "text": "Trabalho em equipe utilizando o método Scrum. Sou Scrum Master da minha equipe no projeto que está sendo desenvolvido no curso de Análise e Desenvolvimento de Sistemas."
+    },
+    {
+      "id": 3, 
+      "image": "https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f4d1.png", 
+      "text": "Planejamento, organização e comunicação com a equipe utilizando as ferramentas Trello e Miro."
+    },
+    {
+      "id": 4, 
+      "image": "https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/2712.png", 
+      "text": "Conhecimento básico em Figma para desenvolvimento de protótipos de alta fidelidade trabalhando em equipe em tempo real."
+    }
+  ]
+}
