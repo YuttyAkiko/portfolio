@@ -22,23 +22,23 @@
 }
 
 /* fontes */
-.font-family-flower {
+.font-1 {
     font-family: 'Indie Flower', cursive;
 }
 
-.font-family-kiwi {
+.font-2 {
     font-family: 'Kiwi Maru', serif;
 }
 
-.font-family-marcellus {
+.font-3 {
     font-family: 'Marcellus', serif;
 }
 
-.font-family-montserrat {
+.font-4 {
     font-family: 'Montserrat', sans-serif;
 }
 
-.font-family-victor {
+.font-5 {
     font-family: 'Victor Mono', monospace;
 }
 
@@ -48,7 +48,7 @@
     padding: 0 0 0.5rem;
 }
 
-.text {
+.txt {
     color: var(--gray-2);
     line-height: 1.5rem;
     font-size: 1rem;
