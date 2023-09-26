@@ -1,8 +1,8 @@
 // Seção onde vão ficar os cards
 let sectionSkills = document.querySelector('.cards-container')
 
-// Endereço do arquivo json
-const url = 'cards.json'
+// Endereço do arquivo JSON
+const url = 'skills.json'
 
 // Desenhando o card
 function drawCard(skill) {
