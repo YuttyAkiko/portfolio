@@ -1,0 +1,76 @@
+{
+  "tools": [
+    {
+      "id": 1, 
+      "image": "assets/img/logos/html.svg", 
+      "text": "HTML5",
+      "status": "Junior"
+    },
+    {
+      "id": 2, 
+      "image": "assets/img/logos/css.svg", 
+      "text": "CSS3",
+      "status": "Junior"
+    },
+    {
+      "id": 3, 
+      "image": "assets/img/logos/js.svg", 
+      "text": "JavaScript",
+      "status": "Junior"
+    },
+    {
+      "id": 4, 
+      "image": "assets/img/logos/node.svg", 
+      "text": "Node.js",
+      "status": "Iniciante"
+    },
+    {
+      "id": 5, 
+      "image": "assets/img/logos/git.svg", 
+      "text": "Git",
+      "status": "Junior"
+    },
+    {
+      "id": 6, 
+      "image": "assets/img/logos/github.svg", 
+      "text": "GitHub",
+      "status": "Junior"
+    },
+    {
+      "id": 7, 
+      "image": "assets/img/logos/py.svg", 
+      "text": "Python",
+      "status": "Junior"
+    },
+    {
+      "id": 8, 
+      "image": "assets/img/logos/g-cloud.svg", 
+      "text": "Google Clould",
+      "status": "Fundamentos"
+    },
+    {
+      "id": 9, 
+      "image": "assets/img/logos/aws.svg", 
+      "text": "AWS",
+      "status": "Associado"
+    },
+    {
+      "id": 10, 
+      "image": "assets/img/logos/azure.svg", 
+      "text": "Azure",
+      "status": "Fundamentos"
+    },
+    {
+      "id": 11, 
+      "image": "assets/img/logos/figma.svg", 
+      "text": "Figma",
+      "status": "Design"
+    },
+    {
+      "id": 12, 
+      "image": "assets/img/logos/trello.svg", 
+      "text": "Trello",
+      "status": "Organização"
+    }
+  ]
+}
