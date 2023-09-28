@@ -59,14 +59,15 @@ function createCards() {
       if (!data || !Array.isArray(data.skills, data.tools)) {
         console.log('Erro ao acessar o JSON ou formato inválido')
         return
-      }
-      // Iterar com os dados do JSON e criar os cartões
-      data.skills.forEach(item => {
+      } else {
+        // Iterar com os dados do JSON e criar os cartões
+        data.skills.forEach(item => {
         drawCardSkills(item);
       })
-      data.tools.forEach(item => {
+        data.tools.forEach(item => {
         drawCardTools(item);
       })
+      }
     })
     .catch(error => {
       console.error('Erro ao buscar o JSON:', error);
