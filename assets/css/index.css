@@ -42,23 +42,36 @@
     font-family: 'Victor Mono', monospace;
 }
 
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
 .title {
     color: var(--yellow-2);
-    font-weight: 600;
     padding: 0 0 0.5rem;
+}
+
+.title-section {
+    font-size: 20px;
+    text-align: center;
+    margin: 2rem 0;
+    width: 100%;
 }
 
 .txt {
     color: var(--gray-2);
     line-height: 1.5rem;
     font-size: 1rem;
-    font-weight: 300;
 }
 /* fim */
 
 /* Backgrounds */
 .gradient-1 {
-    background: linear-gradient(150deg, var(--blue-9) 40%,  var(--fuchsia-9), var(--rose-7));
+    background: linear-gradient(150deg, var(--blue-9) 40%, var(--fuchsia-9), var(--rose-7));
 }
 
 .gradient-2 {
@@ -71,6 +84,7 @@
 .gradient-3 {
     background: linear-gradient(to right, var(--rose-7), var(--fuchsia-8), var(--cyan-4));
 }
+
 /* fim */
 
 /* Conteúdo */
@@ -78,6 +92,10 @@ main {
     background-color: var(--blue-9);
     height: auto;
     padding-top: 90px;
+}
+
+section {
+    padding: 2rem;
 }
 /* fim */
 
@@ -94,18 +112,18 @@ main {
     }
 }
 
-.fa-instagram, 
-.fa-linkedin, 
-.fa-whatsapp, 
+.fa-instagram,
+.fa-linkedin,
+.fa-whatsapp,
 .fa-github {
     color: var(--white);
     width: 25px;
     height: 25px;
 }
 
-.fa-instagram:hover, 
-.fa-linkedin:hover, 
-.fa-whatsapp:hover, 
+.fa-instagram:hover,
+.fa-linkedin:hover,
+.fa-whatsapp:hover,
 .fa-github:hover {
     color: var(--rose-4);
 }
@@ -113,6 +131,7 @@ main {
 .fa-heart {
     color: var(--red-6);
 }
+
 /* fim */
 
 /* emoji */
@@ -125,6 +144,7 @@ main {
 }
 
 @media screen and (max-width: 600px) {
+
     .emoji-hand,
     .emoji-smile,
     .emoji-handshake,
@@ -133,4 +153,5 @@ main {
         width: 30px;
     }
 }
+
 /* fim */
