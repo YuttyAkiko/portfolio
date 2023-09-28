@@ -1,128 +1,120 @@
-	<!DOCTYPE html>
-	<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<link rel="icon" href="assets/img/icons/icon-code.svg">
 		<title>Yutty Takeyama</title>
 
-		<!-- Fontes -->
-		<link rel="stylesheet" href="fontawesome/css/all.min.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kiwi+Maru&family=Marcellus&family=Montserrat:wght@100;300;400;500;600;700;800&family=Victor+Mono:wght@100;300;400;500;600;700&display=swap"
-			rel="stylesheet">
+	<!-- Fontes -->
+	<link rel="stylesheet" href="fontawesome/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kiwi+Maru&family=Marcellus&family=Montserrat:wght@100;300;400;500;600;700;800&family=Victor+Mono:wght@100;300;400;500;600;700&display=swap"
+		rel="stylesheet">
 
-		<!-- links de estilo -->
-		<link rel="stylesheet" href="assets/css/reset.css">
-		<link rel="stylesheet" href="assets/css/index.css">
-		<link rel="stylesheet" href="assets/css/header.css">
-		<link rel="stylesheet" href="assets/css/about.css">
-		<link rel="stylesheet" href="assets/css/skills.css">
-		<link rel="stylesheet" href="assets/css/cards.css">
-		<link rel="stylesheet" href="assets/css/footer.css">
-	</head>
+	<!-- links de estilo -->
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/index.css">
+	<link rel="stylesheet" href="assets/css/header.css">
+	<link rel="stylesheet" href="assets/css/about.css">
+	<link rel="stylesheet" href="assets/css/skills.css">
+	<link rel="stylesheet" href="assets/css/cards.css">
+	<link rel="stylesheet" href="assets/css/footer.css">
+</head>
 
-	<body>
-		<header>
+<body>
+	<header>
+		<div class="menu-container ">
 			<div class="font-2"> <!-- Logotipo -->
 				<img class="i-code" src="assets/img/icons/icon-code.svg" alt="Simbolo de tag de fechamento HTML">
 				<p>Yutty .</p>
 				<p>Takeyama</p>
 				<p class="underline">_</p>
 			</div>
-			<nav id="hide-menu" class="menu font-5">
-				<a href="#about">SOBRE MIM</a>
-				<a href="#skills">HABILIDADES</a>
-				<a href="#tools">FERRAMENTAS</a>
-				<a href="#">PROJETOS</a>
-				<a href="#">CERTIFICAÇÕES</a>
-				<a href="#" id="contact">CONTATO</a>
-			</nav>
-
 			<!-- Este é o menu Sidebar do responsivo -->
 			<div onclick="hideMenu(this)" class="bars">
 				<div class="bar1"></div>
 				<div class="bar2"></div>
 				<div class="bar3"></div>
 			</div>
-		</header>
-		<main>
-			<section id="about" class="about gradient-1">
-				<article>
-					<h1 class="font-5 title fw-600">ANALISTA E DESENVOLVEDORA DE SISTEMAS JUNIOR</h1>
-					<h2 class="font-4">Olá!
-						<img class="emoji-hand" src="https://images.emojiterra.com/google/noto-emoji/unicode-15/animated/1f44b.gif"
-							alt="Emoji de uma mão acenando"> Eu sou
-					</h2>
-					<h3 class="font-4 gradient-2">Yutty Takeyama</h3>
-					<p class="font-4 txt fw-300">Estudante de Análise e Desenvolvimento de Sistemas na Escola SENAI
-						“Morvan
-						Figueiredo”. O meu interesse por tudo relacionado a tecnologia e inovação, principalmento programação e
-						aplicação em nuvem em conjunto com a minha curiosidade, me motiva a estar sempre estudando e ampliando meus
-						conhecimentos. Gosto de trabalhar em equipe, motivar meus colegas e buscar soluções de forma ágil e eficiente.
-						Estou desenvolvendo meu conhecimento pessoal e técnico para ingressar na área de tecnologia.</p>
-					<nav class="font-4 fw-300">
-						<a href="mailto:yutty.akiko@gmail.com" target="_blank"
-							class="hire-me font5 gradient-3">CONTRATE-ME
-							<i class="fa-regular fa-paper-plane"></i>
-						</a>
-						<div class="social-networking">
-							<span>Follow Me:</span>
-							<div>
-								<a href="https://www.instagram.com/yutty.tk/" target="_blank">
-									<i class="fa-brands fa-instagram fa-xl"></i>
-								</a>
-								<a href="https://www.linkedin.com/in/yutty-akiko/" target="_blank">
-									<i class="fa-brands fa-linkedin fa-xl"></i>
-								</a>
-								<a href="https://wa.me/5511967318829" target="_blank">
-									<i class="fa-brands fa-whatsapp fa-xl"></i>
-								</a>
-								<a href="https://github.com/YuttyAkiko" target="_blank">
-									<i class="fa-brands fa-github fa-xl"></i>
-								</a>
-							</div>
+		</div>
+		<nav class="menu hide-menu font-5">
+			<a href="#about">SOBRE MIM</a>
+			<a href="#skills">HABILIDADES</a>
+			<a href="#">PROJETOS</a>
+			<a href="#">CERTIFICAÇÕES</a>
+			<a href="#" id="contact">CONTATO</a>
+		</nav>
+	</header>
+	<main>
+		<section id="about" class="about gradient-1">
+			<article>
+				<h1 class="font-5 title">ANALISTA E DESENVOLVEDORA DE SISTEMAS JUNIOR</h1>
+				<h2 class="font-4">Olá!
+					<img class="emoji-hand" src="https://images.emojiterra.com/google/noto-emoji/unicode-15/animated/1f44b.gif"
+						alt="Emoji de uma mão acenando"> Eu sou
+				</h2>
+				<h3 class="font-4 gradient-2">Yutty Takeyama</h3>
+				<p class="font-4 txt">Estudante de Análise e Desenvolvimento de Sistemas na Escola SENAI
+					“Morvan
+					Figueiredo”. O meu interesse por tudo relacionado a tecnologia e inovação, principalmento programação e
+					aplicação em nuvem em conjunto com a minha curiosidade, me motiva a estar sempre estudando e ampliando meus
+					conhecimentos. Gosto de trabalhar em equipe, motivar meus colegas e buscar soluções de forma ágil e eficiente.
+					Estou desenvolvendo meu conhecimento pessoal e técnico para ingressar na área de tecnologia.</p>
+				<nav class="font-4">
+					<a href="mailto:yutty.akiko@gmail.com" target="_blank" class="hire-me font5 gradient-3">CONTRATE-ME
+						<i class="fa-regular fa-paper-plane"></i>
+					</a>
+					<div class="social-networking">
+						<span>Follow Me:</span>
+						<div>
+							<a href="https://www.instagram.com/yutty.tk/" target="_blank">
+								<i class="fa-brands fa-instagram fa-xl"></i>
+							</a>
+							<a href="https://www.linkedin.com/in/yutty-akiko/" target="_blank">
+								<i class="fa-brands fa-linkedin fa-xl"></i>
+							</a>
+							<a href="https://wa.me/5511967318829" target="_blank">
+								<i class="fa-brands fa-whatsapp fa-xl"></i>
+							</a>
+							<a href="https://github.com/YuttyAkiko" target="_blank">
+								<i class="fa-brands fa-github fa-xl"></i>
+							</a>
 						</div>
-					</nav>
-				</article>
-				<div class="flip">
-					<img src="assets/img/profile-picture.svg" alt="Foto de perfil da Yutty">
-				</div>
-			</section>
-			<section id="skills">
-				<div>
-					<h1 class="font-5 title title-section fw-600">HABILIDADES</h1>
-				</div>
-				<div class="cards-container-skills">
-					<!-- É aqui que estou criando os cards de forma dinâmica com JavaScript utilizando o arquivo cardSkills.js e os dados em JSON no arquivo akills.json -->
-				</div>
-			</section>
-			<section id="tools">
-				<div>
-					<h1 class="font-5 title title-section fw-600">FERRAMENTAS</h1>
-				</div>
-				<div class="cards-container-tools">
-					<!-- É aqui que estou criando os cards de forma dinâmica com JavaScript utilizando o arquivo cardTools.js e os dados em JSON no arquivo tools.json -->
-				</div>
-			</section>
-			</section>
-		</main>
-		<footer class="container font-3 fw-300">
-			&copy; 2023 Todos os direitos reservados |
-			<span>
-				Feito com
-				<i class="fa-solid fa-heart fa-bounce"></i>
-				por Yutty Takeyama
-			</span>
-		</footer>
+					</div>
+				</nav>
+			</article>
+			<div class="flip">
+				<img src="assets/img/profile-picture.svg" alt="Foto de perfil da Yutty">
+			</div>
+		</section>
+		<section id="skills" class="skills">
+			<div>
+				<h1 class="font-5 title">HABILIDADES</h1>
+			</div>
+			<div class="cards-container">
+				<!-- É aqui que estou criando os cards de forma dinâmica com JavaScript utilizando o arquivo cardSkills.js e os dados em JSON no arquivo cards.json -->
+			</div>
+		</section>
+		<section class="tools">
+		</section>
+	</main>
+	<footer class="container font-3">
+		&copy; 2023 Todos os direitos reservados |
+		<span>
+			Feito com
+			<i class="fa-solid fa-heart fa-bounce"></i>
+			por Yutty Takeyama
+		</span>
+	</footer>
 
-		<script src="assets/js/app.js"></script>
-		<script src="assets/js/SideBar.js"></script>
-		<script src="assets/js/cards.js"></script>
-	</body>
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/sideBar.js"></script>
+	<script src="assets/js/cardSkills.js"></script>
+</body>
 
-	</html>
+</html>
