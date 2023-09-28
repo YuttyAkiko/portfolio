@@ -14,7 +14,6 @@ header div {
     display: flex;
     font-size: 22px;
     font-weight: 400;
-    padding-left: 4%;
 }
 
 header div p {
@@ -28,13 +27,11 @@ header div p:nth-child(2) {
     text-shadow: -1.5px -0.5px 0 var(--green-4);
 }
 
-header div p:nth-child(3),
-.underline {
+header div p:nth-child(3), .underline {
     color: var(--fuchsia-5);
 }
 
 /* fim */
-
 /* Efeito de animação do underline no logo do cabeçalho */
 .underline {
     animation: beat-fade 2s linear infinite;
@@ -53,8 +50,8 @@ header div p:nth-child(3),
         opacity: 0;
     }
 }
-/* fim */
 
+/* fim */
 /* Menu de navegação */
 .menu {
     display: block;
@@ -67,14 +64,15 @@ header div p:nth-child(3),
     font-weight: 600;
     padding: 0 0.5rem;
     text-decoration: none;
+    width: auto;
 }
 
 .menu a:hover {
     color: var(--green-5);
     text-shadow: 0 0 5px var(--white);
 }
-/* fim */
 
+/* fim */
 /* Botão contato no fim do menu de navegação */
 #contact {
     background-color: var(--green-4);
@@ -91,18 +89,22 @@ header div p:nth-child(3),
     text-shadow: none;
     transition: 400ms;
 }
-/* fim */
 
+/* fim */
 .bars {
     display: none;
 }
 
 /* Responsividade */
 @media screen and (max-width: 1024px) {
-
     header {
         justify-content: space-around;
     }
+
+    .menu-container {
+        min-width: 85%;
+    }
+
 
     /* Menu hamburguer */
     .bars {
@@ -111,9 +113,7 @@ header div p:nth-child(3),
         margin: 0;
     }
 
-    .bar1,
-    .bar2,
-    .bar3 {
+    .bar1, .bar2, .bar3 {
         background-color: var(--white);
         width: 30px;
         height: 3px;
@@ -132,11 +132,14 @@ header div p:nth-child(3),
     .change .bar3 {
         transform: translate(0, -12px) rotate(45deg);
     }
-    /* fim */
 
+    /* fim */
     /* Menu navegação */
+    .hide-menu {
+        display: none!important;
+    }
+
     .menu {
-        align-items: center;
         background-color: #0c003ace;
         display: flex;
         flex-direction: column;
@@ -146,6 +149,10 @@ header div p:nth-child(3),
         top: 90px;
         width: 100%;
         animation: fadein 1s;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
     }
 
     @keyframes fadein {
@@ -176,6 +183,7 @@ header div p:nth-child(3),
         text-shadow: 0 0 5px var(--white);
         transition: 0;
     }
+
     /* fim */
 }
 
@@ -184,4 +192,13 @@ header div p:nth-child(3),
         font-size: 18px;
         margin-left: 1rem;
     }
+}
+
+.menu-container {
+    width: 320px;
+    justify-content: space-between;
+    height: 90px;
+    background-color: var(--blue-10);
+    z-index: 2;
+    padding: 0 50px;
 }
