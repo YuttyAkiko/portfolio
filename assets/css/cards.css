@@ -1,9 +1,14 @@
-.cards-container-skills, 
-.cards-container-tools {
+.cards-container-skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
 }
 
 .card {
@@ -25,9 +30,27 @@
   /* fim */
 }
 
+.card:hover {
+  box-shadow: 0 0 20px var(--green-5);
+  border: 1.4px solid var(--green-4);
+}
+
 .card p {
   padding-top: 1rem;
   text-align: center;
+}
+
+.btns-chevron {
+  color: var(--green-5);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 100px;
+}
+
+.prev, 
+.next {
+  z-index: 1;
 }
 
 .status {
