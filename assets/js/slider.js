@@ -1,5 +1,5 @@
 const buttons = document.querySelectorAll('.btn-slider'); // Selecionando os botões
-const items = document.querySelectorAll('.card'); // Selecionando cada card
+const items = document.querySelectorAll('.item'); // Selecionando cada card
 const maxItems = items.length; // Quantidade de cards
 
 let currentItem = 0; // Inicializador
