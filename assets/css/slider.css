@@ -1,0 +1,19 @@
+.btn-slider {
+  background: var(--blue-9);
+  color: var(--green-5);
+  height: 50px;
+  justify-content: space-between;
+  padding: 1rem;
+  position: relative;
+  bottom: 8rem;
+  z-index: 1;
+}
+
+.slider-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.next {
+  align-items: flex-end;
+}

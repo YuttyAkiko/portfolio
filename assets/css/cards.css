@@ -9,6 +9,7 @@
   display: flex;
   flex-wrap: nowrap;
   overflow-x: hidden;
+  align-items: center;
 }
 
 .card {
@@ -22,11 +23,11 @@
   /* From https://css.glass */
   /* Efeito glass */
   background: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(7.7px);
   -webkit-backdrop-filter: blur(7.7px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
   /* fim */
 }
 
@@ -38,19 +39,6 @@
 .card p {
   padding-top: 1rem;
   text-align: center;
-}
-
-.btns-chevron {
-  color: var(--green-5);
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  top: 100px;
-}
-
-.prev, 
-.next {
-  z-index: 1;
 }
 
 .status {

@@ -76,6 +76,7 @@
 
 .hire-me:nth-child(1):hover {
     background: var(--green-4);
+    border: none;
     box-shadow: 3px 5px var(--white);
     color: var(--blue-10);
     margin: 0 5px 3px 0px;
@@ -113,11 +114,16 @@
 }
 
 .about article nav a {
-    border: solid 1px var(--rose-4);
+    border: solid 2px var(--rose-4);
     border-radius: 100%;
     padding: 0.7rem 0.2rem 0.7rem 0.7rem;
     margin: 0.5rem;
     text-decoration: none;
+}
+
+.about article nav a:hover {
+    border: solid 2px var(--gray-3);
+    box-shadow: 0 0 10px var(--white);
 }
 
 .about article nav a:nth-child(4) {
@@ -130,11 +136,17 @@
 .flip {
     animation: flip 2s;
     background-color: transparent;
-    border: solid 1rem var(--rose-4);
+    border: solid 10px var(--rose-4);
     border-radius: 100%;
     height: 400px;
     padding: 1rem;
     width: 400px;
+}
+
+.flip:hover {
+    border-color: var(--gray-3);
+    box-shadow: 0 0 40px var(--white);
+    transition: 600ms;
 }
 
 /* Efeito de animação da borda da foto do perfil */

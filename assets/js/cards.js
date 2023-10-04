@@ -29,7 +29,7 @@ function drawCardSkills(item) {
 function drawCardTools(item) {
   // Card
   let card = document.createElement('article');
-  card.setAttribute('class', 'card');
+  card.setAttribute('class', 'card item');
   sectionTools.appendChild(card);
 
   // Imagem do card
@@ -57,7 +57,7 @@ function createCards() {
     .then(response => response.json())
     .then(data => {
       if (!data || !Array.isArray(data.skills, data.tools)) {
-        console.log('Erro ao acessar o JSON ou formato inválido')
+        console.log('Formato inválido!')
         return
       } else {
         // Iterar com os dados do JSON e criar os cartões

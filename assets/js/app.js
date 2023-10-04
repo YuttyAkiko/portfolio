@@ -1,13 +1,15 @@
 // Buscando os links do menu de navegação
 const menuItems = document.querySelectorAll('.menu a[href^="#"]');
 
+// Colocando o evento de click e chamando a função para cada link do menu
 menuItems.forEach(item => {
   item.addEventListener('click', scrollToIdOnClick);
 })
 
 function getScrollTopByHref(element) {
   const id = element.getAttribute('href'); // Busca o href do link
-  return document.querySelector(id).offsetTop; // Retorna a posição que o elemento está do topo
+  const position = document.querySelector(id).offsetTop; // Retorna a posição que o elemento está do topo
+  return position
 }
 
 function scrollToIdOnClick(event) {
@@ -32,7 +34,7 @@ function scrollToPosition(section) {
  * @param {int) endY: destination y coordinate
  * @param {int} duration: animation duration in ms
  */
-// Pegueis estas funções prontas
+// Peguei as funções abaixo prontas no GitHub do Origmid
 function smoothScrollTo(endX, endY, duration) {
   const startX = window.scrollX || window.pageXOffset;
   const startY = window.scrollY || window.pageYOffset;
