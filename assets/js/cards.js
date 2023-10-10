@@ -1,6 +1,6 @@
 // Seção onde vão ficar os cards
 let sectionSkills = document.querySelector('.cards-container-skills');
-let sectionTools = document.querySelector('.carousel');
+let sectionTools = document.querySelector('.slider');
 
 // Endereço do arquivo JSON
 const url = 'cards.json';
