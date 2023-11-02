@@ -9,7 +9,8 @@ const url = 'cards.json';
 function drawCardSkills(item) {
   // Card
   let card = document.createElement('article');
-  card.setAttribute('class', 'card');
+  card.setAttribute('class', 'card card-skill');
+
   sectionSkills.appendChild(card);
 
   // Imagem do card
@@ -29,7 +30,7 @@ function drawCardSkills(item) {
 function drawCardTools(item) {
   // Card
   let card = document.createElement('article');
-  card.setAttribute('class', 'card item');
+  card.setAttribute('class', 'card card-tool');
   sectionTools.appendChild(card);
 
   // Imagem do card

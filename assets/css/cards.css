@@ -5,13 +5,6 @@
   width: 100%;
 }
 
-.carousel {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: hidden;
-  align-items: center;
-}
-
 .card {
   align-items: center;
   display: flex;
@@ -19,8 +12,6 @@
   margin: 1rem;
   padding: 1rem;
   text-align: center;
-  width: 220px;
-  /* From https://css.glass */
   /* Efeito glass */
   background: rgba(255, 255, 255, 0.09);
   backdrop-filter: blur(7.7px);
@@ -34,6 +25,14 @@
 .card:hover {
   box-shadow: 0 0 20px var(--green-5);
   border: 1.4px solid var(--green-4);
+}
+
+.card-skill {
+  width: 200px;
+}
+
+.card-tool {
+  width: 140px;
 }
 
 .card p {
