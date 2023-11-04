@@ -50,3 +50,33 @@
   margin: 0.5rem;
   padding: 0 1rem;
 }
+
+@media screen and (max-width: 425px) {
+  .card-tool {
+    min-width: 200px;
+  }
+  
+  .card-tool:first-child {
+    margin-left: 6rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .card-tool {
+    min-width: 180px;
+  }
+  
+  .card-tool:first-child {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .card-tool {
+    min-width: 150px;
+  }
+  
+  .card-tool:first-child {
+    margin-left: 4.5rem;
+  }
+}
