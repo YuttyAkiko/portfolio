@@ -1,58 +1,60 @@
 window.onload = function () {
 
 	setTimeout(() => {
-		const prevBtn = document.getElementById("prevBtn");
-		const nextBtn = document.getElementById("nextBtn");
-		const autoPlayBtn = document.querySelector(".btnAuto");
-		const slider = document.querySelector(".slider");
-		const cards = document.querySelectorAll(".card-tool");
+		const prevBtn = document.getElementById('prev-btn');
+		const nextBtn = document.getElementById('next-btn');
+		const slider = document.querySelector('.slider');
+		const cards = document.querySelectorAll('.card-tool');
 
 
-		//configuração padrão para inicializar variavel.
-		var refreshIntervalId = setInterval(nextSlide, 999999);
+		//Configuração padrão para inicializar variavel.
+		var refreshIntervalId;
 
-		// configuração padrão para inicializar a posição do card inicial.
+		// Configuração padrão para inicializar a posição do card inicial.
 		let currentIndex = 0;
 
-		// por padrão o autoplay dos cards vem desabilitado.
-		let autoPlayStatus = false;
+		// Por padrão o autoplay dos cards vem desabilitado.
+		let autoPlayStatus = true;
 
-		// Função responsavel pelo funcionamento automatico.
-		function autoplay() {
-			switch (autoPlayStatus) {
-				case false:
-					autoPlayStatus = true;
-					autoPlayBtn.style.color = "#00ff00";
-					refreshIntervalId = setInterval(nextSlide, 1000);
-					autoPlayBtn.innerHTML =
-						'<span class="material-symbols-outlined">toggle_off</span>';
-					break;
-				case true:
-					autoPlayStatus = false;
-					autoPlayBtn.style.color = "#ff0000";
-					clearInterval(refreshIntervalId);
-					autoPlayBtn.innerHTML =
-						'<span class="material-symbols-outlined">toggle_on</span>';
-					break;
+		// Função para iniciar o autoplay
+		function autoPlay() {
+			if (autoPlayStatus) {
+				refreshIntervalId = setInterval(nextSlide, 2000); // 2 segundos
+				slider.addEventListener('mouseenter', pauseAutoPlay);
+				slider.addEventListener('mouseleave', resumeAutoPlay);
+			} else {
+				clearInterval(refreshIntervalId);
 			}
+		}
+
+		// Função para parar o autoplay quando o mouse entra no slider, botões "prev" e "next"
+		function pauseAutoPlay() {
+			autoPlayStatus = false;
+			autoPlay();
+		}
+
+		// Função para retomar o autoplay quando o mouse sai do slider, botões "prev" e "next"
+		function resumeAutoPlay() {
+			autoPlayStatus = true;
+			autoPlay();
 		}
 
 		// Função para avançar um card.
 		function prevSlide() {
 			currentIndex = Math.max(currentIndex - 1, -1);
-			updateSliderPosition("prev");
+			updateSliderPosition('prev');
 		}
 
 		// Função para retornar um card.
 		function nextSlide() {
 			currentIndex = Math.min(currentIndex + 1, cards.length);
-			updateSliderPosition("next");
+			updateSliderPosition('next');
 		}
 
-		// logica aplicada para funcionamento dos cards baseado no tamanho e quantidade de cards existentes dentro do slider.
+		// Lógica aplicada para funcionamento dos cards baseado no tamanho e quantidade de cards existentes dentro do slider.
 		function updateSliderPosition(dir) {
 			const totalIndex = cards.length;
-			const cardWidth = cards[0].clientWidth + 50;
+			const cardWidth = cards[0].clientWidth + 34;
 			let offset = -currentIndex * cardWidth;
 			slider.style.transform = `translateX(${offset}px)`;
 			if (currentIndex === totalIndex) {
@@ -61,17 +63,27 @@ window.onload = function () {
 			}
 			if (currentIndex < 0) {
 				currentIndex = totalIndex - 1;
-				let totaloffset = -totalIndex * cardWidth + 250;
+				let totaloffset = -totalIndex * cardWidth + 210;
 				slider.style.transform = `translateX(${totaloffset}px)`;
 			}
 		}
 
-		// configuração dos botões visuais na pagina.
-		prevBtn.addEventListener("click", prevSlide);
-		nextBtn.addEventListener("click", nextSlide);
+		// Configuração dos botões 'prev' e 'next' do slider
+		prevBtn.addEventListener('click', prevSlide);
+		nextBtn.addEventListener('click', nextSlide);
 
+		// Adicionar evento para pausar o autoplay quando o mouse entra nos botões "prev" e "next"
+		prevBtn.addEventListener('mouseenter', pauseAutoPlay);
+		nextBtn.addEventListener('mouseenter', pauseAutoPlay);
+
+		// Adicionar evento para retomar o autoplay quando o mouse sai dos botões "prev" e "next"
+		prevBtn.addEventListener('mouseleave', resumeAutoPlay);
+		nextBtn.addEventListener('mouseleave', resumeAutoPlay);
+
+		autoPlay(); // Inicie o autoplay quando a página carregar
 		updateSliderPosition("");
 
 	}, 200);
+
 
 };

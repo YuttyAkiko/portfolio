@@ -32,7 +32,11 @@
 }
 
 .card-tool {
-  width: 140px;
+  min-width: 140px;
+}
+
+.card-tool:first-child {
+  margin-left: 4.5rem;
 }
 
 .card p {
