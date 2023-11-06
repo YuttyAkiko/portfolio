@@ -1,4 +1,4 @@
-.cards-container-skills {
+.container-cards-skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -40,7 +40,7 @@
 }
 
 .card p {
-  padding-top: 1rem;
+  padding: 1rem 0;
   text-align: center;
 }
 
@@ -49,6 +49,16 @@
   border-radius: 16px;
   margin: 0.5rem;
   padding: 0 1rem;
+}
+
+.card-projects {
+  width: 200px;
+}
+
+.btn-projects {
+  padding: 1rem;
+  border: none;
+  color: var(--white);
 }
 
 @media screen and (max-width: 374px) {

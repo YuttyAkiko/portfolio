@@ -95,5 +95,16 @@
       "text": "Trello",
       "status": "Organização"
     }
+  ],
+
+  "projects": [
+    {
+      "id": 1,
+      "title": "Decodificador",
+      "image": "assets/img/projects/img-decodificador.jpg",
+      "description": "Aplicativo para decodificar mensagens em diferentes idiomas.",
+      "button": "ACESSAR",
+      "link": "https://yuttyakiko.github.io/decodificador/"
+    }
   ]
 }
