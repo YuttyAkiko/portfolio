@@ -5,13 +5,6 @@
   width: 100%;
 }
 
-.carousel {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: hidden;
-  align-items: center;
-}
-
 .card {
   align-items: center;
   display: flex;
@@ -19,8 +12,6 @@
   margin: 1rem;
   padding: 1rem;
   text-align: center;
-  width: 220px;
-  /* From https://css.glass */
   /* Efeito glass */
   background: rgba(255, 255, 255, 0.09);
   backdrop-filter: blur(7.7px);
@@ -36,6 +27,18 @@
   border: 1.4px solid var(--green-4);
 }
 
+.card-skill {
+  width: 200px;
+}
+
+.card-tool {
+  min-width: 140px;
+}
+
+.card-tool:first-child {
+  margin-left: 4.5rem;
+}
+
 .card p {
   padding-top: 1rem;
   text-align: center;
@@ -46,4 +49,54 @@
   border-radius: 16px;
   margin: 0.5rem;
   padding: 0 1rem;
+}
+
+@media screen and (max-width: 374px) {
+  .card-tool {
+    min-width: 150px;
+  }
+  
+  .card-tool:first-child {
+    margin-left: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .card-tool {
+    min-width: 180px;
+  }
+  
+  .card-tool:first-child {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .card-tool {
+    min-width: 180px;
+  }
+  
+  .card-tool:first-child {
+    margin-left: 6.5rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .card-tool {
+    min-width: 140px;
+  }
+  
+  .card-tool:first-child {
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-tool {
+    min-width: 140px;
+  }
+  
+  .card-tool:first-child {
+    margin-left: 6rem;
+  }
 }
