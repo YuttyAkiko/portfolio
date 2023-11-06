@@ -14,7 +14,7 @@ window.onload = function () {
 		let currentIndex = 0;
 
 		// Por padrão o autoplay dos cards vem desabilitado.
-		let autoPlayStatus = true;
+		let autoPlayStatus = false;
 
 		// Função para iniciar o autoplay
 		function autoPlay() {
@@ -84,6 +84,5 @@ window.onload = function () {
 		updateSliderPosition("");
 
 	}, 200);
-
-
+	
 };
