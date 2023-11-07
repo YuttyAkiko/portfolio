@@ -124,7 +124,11 @@
     },
     {
       "id": 4,
-      "status": "EM BREVE"
+      "title": "Carta aleatória",
+      "image": "assets/img/projects/img-carta-aleatoria.png",
+      "description": "Aplicativo que gera uma carta aleatória",
+      "button": "ACESSAR",
+      "link": "https://yuttyakiko.github.io/carta-aleatoria/"
     }
   ]
 }
