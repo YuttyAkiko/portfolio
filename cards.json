@@ -136,7 +136,7 @@
     {
       "id": 1,
       "image": "/assets/img/logos/alura.svg",
-      "badge": "/assets/badges/certificado-alura.pdf",
+      "badge": "https://cursos.alura.com.br/user/yutty-akiko/fullCertificate/e38b07e698f1e4e5f48d378adbc7a3f2",
       "description": "Formação alura"
     },
     {

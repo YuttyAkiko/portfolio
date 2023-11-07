@@ -123,11 +123,13 @@ function drawCardBadges(item) {
   let link = document.createElement('a');
   div.appendChild(link);
   link.setAttribute('href', item.badge);
+  link.setAttribute('class', 'badge-a');
 
   // Imagem do card
   let image = document.createElement('img');
   link.appendChild(image);
   image.setAttribute('src', item.image);
+  image.setAttribute('class', 'badge-img');
 
   // Texto do card
   let text = document.createElement('span');
