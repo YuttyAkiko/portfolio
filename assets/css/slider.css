@@ -14,7 +14,7 @@
 	max-width: 100%;
   overflow: visible;
 	padding: 0;
-	transition: transform 500ms cubic-bezier(0.6, -1, 0.74, 0.05);
+	transition: transform 400ms cubic-bezier(0.27, 0.63, 0.60, 1.45);
 	width: 100%;
 }
 

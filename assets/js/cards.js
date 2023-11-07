@@ -2,6 +2,7 @@
 let containerSkills = document.querySelector('.container-cards-skills');
 let containerTools = document.querySelector('.slider');
 let containerProjects = document.querySelector('.container-cards-projects');
+let containerBadges = document.querySelector('.container-cards-badges');
 
 // Endereço do arquivo JSON
 const url = 'cards.json';
@@ -74,19 +75,19 @@ function drawCardProjects(item) {
   // Preview do projeto
   let image = document.createElement('img');
   div1.appendChild(image);
-  image.setAttribute('src', item.image); // Define a origem da imagem
+  image.setAttribute('src', item.image); // Define a origem da imagem no json
   image.setAttribute('class', 'img-project');
 
   // Descrição do projeto
   let text = document.createElement('p');
   div2.appendChild(text);
-  text.textContent = item.description; // Define o texto do parágrafo
+  text.textContent = item.description;
   text.setAttribute('class', 'txt font-4 fw-300');
-  
+
   // Link do projeto
   let button = document.createElement('button');
   div2.appendChild(button);
-  button.textContent = item.button; // Define o texto do parágrafo
+  button.textContent = item.button;
   button.setAttribute('class', 'btn-green btn-projects font-5 fw-600');
   button.addEventListener('click', () => {
     window.open(item.link, '_blank');
@@ -98,7 +99,7 @@ function drawCardProjects(item) {
   status.textContent = item.status;
   status.setAttribute('class', 'txt font-4 status');
 
-  if(item.status) {
+  if (item.status) {
     image.style.display = 'none';
     button.style.display = 'none';
   } else {
@@ -106,12 +107,41 @@ function drawCardProjects(item) {
   }
 }
 
+// Desenhando o card de CERTIFICAÇÕES
+function drawCardBadges(item) {
+  // Card
+  let card = document.createElement('div');
+  containerBadges.appendChild(card);
+  card.setAttribute('class', 'card-badge')
+
+  // Imagem do card
+  let div = document.createElement('div');
+  card.appendChild(div);
+  div.setAttribute('class', 'badge');
+
+  // Link do card
+  let link = document.createElement('a');
+  div.appendChild(link);
+  link.setAttribute('href', item.badge);
+
+  // Imagem do card
+  let image = document.createElement('img');
+  link.appendChild(image);
+  image.setAttribute('src', item.image);
+
+  // Texto do card
+  let text = document.createElement('span');
+  card.appendChild(text);
+  text.textContent = item.description;
+  text.setAttribute('class', 'txt font-4');
+}
+
 // Pegando dados e criando os cards
 function createCards() {
   fetch(url)
     .then(response => response.json())
     .then(data => {
-      if (!data || !Array.isArray(data.skills, data.tools, data.projects)) {
+      if (!data || !Array.isArray(data.skills, data.tools, data.projects, data.badges)) {
         console.log('Formato inválido!')
         return
       } else {
@@ -124,6 +154,9 @@ function createCards() {
         })
         data.projects.forEach(item => {
           drawCardProjects(item);
+        })
+        data.badges.forEach(item => {
+          drawCardBadges(item);
         })
       }
     })

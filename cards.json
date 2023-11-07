@@ -73,7 +73,7 @@
     },
     {
       "id": 9, 
-      "image": "assets/img/logos/aws.svg", 
+      "image": "assets/img/logos/aws-tools.svg", 
       "text": "AWS",
       "status": "Associado"
     },
@@ -129,6 +129,45 @@
       "description": "Aplicativo que gera uma carta aleatória",
       "button": "ACESSAR",
       "link": "https://yuttyakiko.github.io/carta-aleatoria/"
+    }
+  ],
+
+  "badges": [
+    {
+      "id": 1,
+      "image": "/assets/img/logos/alura.svg",
+      "badge": "/assets/badges/certificado-alura.pdf",
+      "description": "Formação alura"
+    },
+    {
+      "id": 2,
+      "image": "/assets/img/logos/senai.svg",
+      "badge": "https://www.sp.senai.br/consulta-certificado?qrcode=00021025/3168830",
+      "description": "LGPD"
+    },
+    {
+      "id": 3,
+      "image": "/assets/img/logos/senai.svg",
+      "badge": "https://www.sp.senai.br/consulta-certificado?qrcode=00021027/3168830",
+      "description": "Desvendando o 5G"
+    },
+    {
+      "id": 4,
+      "image": "/assets/img/logos/senai.svg",
+      "badge": "https://www.sp.senai.br/consulta-certificado?qrcode=00021022/3168830",
+      "description": "Economia Circular"
+    },
+    {
+      "id": 5,
+      "image": "/assets/img/logos/g-cloud2.svg",
+      "badge": "https://www.cloudskillsboost.google/public_profiles/6fd3a35f-5ba1-41c7-bb84-2fa3770007f7",
+      "description": "Google Cloud"
+    },
+    {
+      "id": 6,
+      "image": "/assets/img/logos/aws-light.svg",
+      "badge": "https://www.credly.com/users/yutty-takeyama/badges",
+      "description": "Amazon Web Services"
     }
   ]
 }

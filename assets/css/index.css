@@ -14,6 +14,8 @@
 	--green-5: #00ff57;
 	--green-6: #16bb29;
 	--indigo-9: #312E81;
+	--pink-5: #EC4899;
+	--pink-4: #F472B6;
 	--purple-9: #581C87;
 	--red-6: #DC2626;
 	--rose-4: #FDA4AF;
@@ -181,21 +183,21 @@ section {
 /* fim */
 
 /* Bordas */
-.border-green:hover {
-	box-shadow: 0 0 20px var(--cyan-6);
-	border: 1.4px solid var(--cyan-4);
-	transition: 500ms;
-}
-
 .border-cyan:hover {
-	box-shadow: 0 0 20px var(--green-5);
-	border: 1.4px solid var(--green-4);
+	box-shadow: 0 0 20px var(--cyan-6);
+	border: solid 1.4px var(--cyan-4);
 	transition: 500ms;
 }
 
 .border-fuchsia:hover {
 	box-shadow: 0 0 20px var(--fuchsia-8);
-	border: 1.4px solid var(--fuchsia-5);
+	border: solid 1.4px var(--fuchsia-5);
+	transition: 500ms;
+}
+
+.border-green:hover {
+	box-shadow: 0 0 20px var(--green-5);
+	border: solid  1.4px var(--green-4);
 	transition: 500ms;
 }
 
