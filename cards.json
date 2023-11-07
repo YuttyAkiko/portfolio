@@ -18,7 +18,7 @@
     {
       "id": 4, 
       "image": "https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/2712.png", 
-      "text": "Conhecimento básico em Figma para desenvolvimento de protótipos de alta fidelidade trabalhando em equipe em tempo real."
+      "text": "Conhecimento básico em Figma para desenvolvimento de protótipos de alta fidelidade, trabalhando com a equipe em tempo real."
     }
   ],
   
@@ -100,11 +100,31 @@
   "projects": [
     {
       "id": 1,
+      "title": "Clinica Vision",
+      "image": "assets/img/projects/img-clinica-vision.png",
+      "description": "Sistema para clínica oftalmológica fictícia, projeto do curso de Análise e Desenvolvimento de Sistemas",
+      "button": "ACESSAR",
+      "link": "https://github.com/YuttyAkiko/clinica-vision.git"
+    },
+    {
+      "id": 2,
       "title": "Decodificador",
-      "image": "assets/img/projects/img-decodificador.jpg",
+      "image": "assets/img/projects/img-decodificador.png",
       "description": "Aplicativo para decodificar mensagens em diferentes idiomas.",
       "button": "ACESSAR",
       "link": "https://yuttyakiko.github.io/decodificador/"
+    },
+    {
+      "id": 3,
+      "title": "Formulário",
+      "image": "assets/img/projects/img-form.png",
+      "description": "Formulário simples, em HTML5 e CSS3",
+      "button": "ACESSAR",
+      "link": "https://yuttytk.github.io/formulario/"
+    },
+    {
+      "id": 4,
+      "status": "EM BREVE"
     }
   ]
 }

@@ -73,24 +73,7 @@ header div p:nth-child(3), .underline {
 }
 
 /* fim */
-/* Botão contato no fim do menu de navegação */
-#contact {
-    background-color: var(--green-4);
-    border-radius: 5px;
-    margin: 6px 0 0 6px;
-    padding: 0.8rem;
-    text-shadow: 0 0 6px var(--black);
-}
 
-#contact:hover {
-    color: var(--blue-10);
-    box-shadow: 3px 3px var(--white);
-    margin: 0 6px 6px 0;
-    text-shadow: none;
-    transition: 400ms;
-}
-
-/* fim */
 .bars {
     display: none;
 }

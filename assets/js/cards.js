@@ -10,7 +10,7 @@ const url = 'cards.json';
 function drawCardSkills(item) {
   // Card
   let card = document.createElement('article');
-  card.setAttribute('class', 'card card-skill');
+  card.setAttribute('class', 'card card-skill border-green');
   containerSkills.appendChild(card);
 
   // Imagem do card
@@ -30,7 +30,7 @@ function drawCardSkills(item) {
 function drawCardTools(item) {
   // Card
   let card = document.createElement('article');
-  card.setAttribute('class', 'card card-tool');
+  card.setAttribute('class', 'card card-tool border-cyan');
   containerTools.appendChild(card);
 
   // Imagem do card
@@ -56,36 +56,54 @@ function drawCardTools(item) {
 function drawCardProjects(item) {
   // Card
   let card = document.createElement('article');
-  card.setAttribute('class', 'card card-skill');
+  card.setAttribute('class', 'card card-project border-fuchsia');
   containerProjects.appendChild(card);
+
+  let div1 = document.createElement('div');
+  card.appendChild(div1);
+
+  let div2 = document.createElement('div');
+  card.appendChild(div2);
 
   // Título do projeto
   let title = document.createElement('p');
-  card.appendChild(title);
+  div1.appendChild(title);
   title.textContent = item.title; // Define o título
   title.setAttribute('class', 'txt font-5 fw-600');
 
   // Preview do projeto
   let image = document.createElement('img');
-  card.appendChild(image);
+  div1.appendChild(image);
   image.setAttribute('src', item.image); // Define a origem da imagem
-  image.setAttribute('class', 'card-projects');
+  image.setAttribute('class', 'img-project');
 
   // Descrição do projeto
   let text = document.createElement('p');
-  card.appendChild(text);
+  div2.appendChild(text);
   text.textContent = item.description; // Define o texto do parágrafo
   text.setAttribute('class', 'txt font-4 fw-300');
   
   // Link do projeto
   let button = document.createElement('button');
-  card.appendChild(button);
+  div2.appendChild(button);
   button.textContent = item.button; // Define o texto do parágrafo
-  button.setAttribute('id', 'contact');
-  button.setAttribute('class', 'btn-projects font-5 fw-600');
+  button.setAttribute('class', 'btn-green btn-projects font-5 fw-600');
   button.addEventListener('click', () => {
     window.open(item.link, '_blank');
   })
+
+  // Span do card
+  let status = document.createElement('span');
+  div2.appendChild(status);
+  status.textContent = item.status;
+  status.setAttribute('class', 'txt font-4 status');
+
+  if(item.status) {
+    image.style.display = 'none';
+    button.style.display = 'none';
+  } else {
+    status.style.display = 'none';
+  }
 }
 
 // Pegando dados e criando os cards
