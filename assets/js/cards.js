@@ -120,14 +120,14 @@ function drawCardBadges(item) {
   div.setAttribute('class', 'badge');
 
   // Link do card
-  let link = document.createElement('a');
-  div.appendChild(link);
-  link.setAttribute('href', item.badge);
-  link.setAttribute('class', 'badge-a');
+  let a = document.createElement('a');
+  div.appendChild(a);
+  a.setAttribute('href', item.badge);
+  a.setAttribute('class', 'badge-a');
 
   // Imagem do card
   let image = document.createElement('img');
-  link.appendChild(image);
+  a.appendChild(image);
   image.setAttribute('src', item.image);
   image.setAttribute('class', 'badge-img');
 
@@ -138,7 +138,7 @@ function drawCardBadges(item) {
   text.setAttribute('class', 'txt font-4');
 }
 
-// Pegando dados e criando os cards
+// Pegando dados e criando os cards a partir de uma arquivo json
 function createCards() {
   fetch(url)
     .then(response => response.json())

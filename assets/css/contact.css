@@ -1,0 +1,38 @@
+/* section contact */
+#contact nav{
+  align-items: flex-start;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+#contact a {
+  border: solid 3px var(--white);
+  border-radius: 100%;
+  text-decoration: none;
+  margin: .8rem;
+  padding: 1.4rem 1rem;
+}
+
+#contact a:hover {
+  border-color: var(--rose-4);
+  box-shadow: 0 0 10px var(--white);
+  transition: 300ms;
+}
+
+.fa-instagram,
+.fa-linkedin,
+.fa-whatsapp,
+.fa-envelope,
+.fa-github {
+	color: var(--white);
+}
+
+.fa-instagram:hover,
+.fa-linkedin:hover,
+.fa-whatsapp:hover,
+.fa-envelope:hover,
+.fa-github:hover {
+	color: var(--rose-4);
+}

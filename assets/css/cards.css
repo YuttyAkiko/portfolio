@@ -75,6 +75,49 @@
   justify-content: center;
 }
 
+/* Bordas dos cards*/
+.border-cyan:hover {
+	box-shadow: 0 0 20px var(--cyan-6);
+	border: solid 1.4px var(--cyan-4);
+	transition: 500ms;
+}
+
+.border-fuchsia:hover {
+	box-shadow: 0 0 20px var(--fuchsia-8);
+	border: solid 1.4px var(--fuchsia-5);
+	transition: 500ms;
+}
+
+.border-green:hover {
+	box-shadow: 0 0 20px var(--green-5);
+	border: solid  1.4px var(--green-4);
+	transition: 500ms;
+}
+
+/* fim */
+
+/* emoji dos cards*/
+.emoji-hand,
+.emoji-smile,
+.emoji-handshake,
+.emoji-paper,
+.emoji-pen {
+	width: 60px;
+}
+
+@media screen and (max-width: 600px) {
+
+	.emoji-hand,
+	.emoji-smile,
+	.emoji-handshake,
+	.emoji-paper,
+	.emoji-pen {
+		width: 30px;
+	}
+}
+
+/* fim */
+
 @media screen and (max-width: 374px) {
   .card-tool {
     min-width: 150px;

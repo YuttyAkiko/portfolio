@@ -104,101 +104,24 @@ section {
 
 /* fim */
 
-/* Ícones */
-.i-code {
-	color: var(--green-6);
-	padding-top: 0.5rem;
-	width: 40px;
-}
-
-@media (max-width: 425px) {
-	.i-code {
-		width: 30px;
-	}
-}
-
-.fa-instagram,
-.fa-linkedin,
-.fa-whatsapp,
-.fa-github {
-	color: var(--white);
-	width: 25px;
-	height: 25px;
-}
-
-.fa-instagram:hover,
-.fa-linkedin:hover,
-.fa-whatsapp:hover,
-.fa-github:hover {
-	color: var(--rose-4);
-}
-
-.fa-heart {
-	color: var(--red-6);
-}
-
-/* fim */
-
-/* emoji */
-.emoji-hand,
-.emoji-smile,
-.emoji-handshake,
-.emoji-paper,
-.emoji-pen {
-	width: 60px;
-}
-
-@media screen and (max-width: 600px) {
-
-	.emoji-hand,
-	.emoji-smile,
-	.emoji-handshake,
-	.emoji-paper,
-	.emoji-pen {
-		width: 30px;
-	}
-}
-
-/* fim */
 
 /* Botão contato no fim do menu de navegação e no cards projetos*/
-.menu>.btn-green,
-.btn-green {
+.btn-green,
+.menu > .contact {
 	background-color: var(--green-4);
 	border-radius: 5px;
 	margin: 6px 0 0 6px;
-	padding: 0.8rem;
+	padding: .8rem;
 	text-shadow: 0 0 6px var(--black);
 }
 
-.menu>.btn-green:hover,
-.btn-green:hover {
+.btn-green:hover,
+.menu > .contact:hover {
 	color: var(--blue-10);
 	box-shadow: 3px 3px var(--white);
 	margin: 0 6px 6px 0;
 	text-shadow: none;
 	transition: 400ms;
-}
-
-/* fim */
-
-/* Bordas */
-.border-cyan:hover {
-	box-shadow: 0 0 20px var(--cyan-6);
-	border: solid 1.4px var(--cyan-4);
-	transition: 500ms;
-}
-
-.border-fuchsia:hover {
-	box-shadow: 0 0 20px var(--fuchsia-8);
-	border: solid 1.4px var(--fuchsia-5);
-	transition: 500ms;
-}
-
-.border-green:hover {
-	box-shadow: 0 0 20px var(--green-5);
-	border: solid  1.4px var(--green-4);
-	transition: 500ms;
 }
 
 /* fim */

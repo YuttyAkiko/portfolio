@@ -1,3 +1,15 @@
+.i-code {
+	color: var(--green-6);
+	padding-top: .5rem;
+	width: 40px;
+}
+
+@media (max-width: 425px) {
+	.i-code {
+		width: 30px;
+	}
+}
+
 header {
     align-items: center;
     background-color: var(--blue-10);
@@ -16,18 +28,18 @@ header div {
     font-weight: 400;
 }
 
-header div p {
-    padding-left: 0.4rem;
+header p {
+    padding-left: .4rem;
 }
 
 /* Ínicio dos estilos da fonte do logotipo Yutty Takeyama*/
-header div p:nth-child(2) {
+header p:nth-child(2) {
     color: var(--white);
-    padding-left: 0.8rem;
-    text-shadow: -1.5px -0.5px 0 var(--green-4);
+    padding-left: .8rem;
+    text-shadow: -1.5px -.5px 0 var(--green-4);
 }
 
-header div p:nth-child(3), .underline {
+header p:nth-child(3), .underline {
     color: var(--fuchsia-5);
 }
 
@@ -62,7 +74,7 @@ header div p:nth-child(3), .underline {
     color: var(--white);
     font-size: 14px;
     font-weight: 600;
-    padding: 0 0.5rem;
+    padding: 0 .5rem;
     text-decoration: none;
     width: auto;
 }
@@ -101,7 +113,7 @@ header div p:nth-child(3), .underline {
         width: 30px;
         height: 3px;
         margin: 9px 0;
-        transition: 0.5s;
+        transition: .5s;
     }
 
     .change .bar1 {
@@ -152,22 +164,20 @@ header div p:nth-child(3), .underline {
         display: none;
     }
 
-    #contact {
+    .menu > .contact {
         background-color: transparent;
         border-radius: 5px;
         padding: 0;
         margin: 0;
     }
 
-    #contact:hover {
+    .menu > .contact:hover {
         box-shadow: none;
         color: var(--green-5);
         margin: 0;
         text-shadow: 0 0 5px var(--white);
         transition: 0;
     }
-
-    /* fim */
 }
 
 @media screen and (max-width: 425px) {

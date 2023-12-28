@@ -12,7 +12,11 @@ footer {
 }
 
 footer span {
-    padding-left:0.5rem;
+    padding-left: .5rem;
+}
+
+.fa-heart {
+	color: var(--red-6);
 }
 
 @media screen and (max-width: 526px) {
