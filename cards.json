@@ -168,24 +168,6 @@
       "image": "assets/img/logos/senai.svg",
       "badge": "https://www.sp.senai.br/consulta-certificado?qrcode=00021022/3168830",
       "description": "Economia Circular"
-    },
-    {
-      "id": 7,
-      "image": "assets/img/logos/senai.svg",
-      "badge": "#",
-      "description": "Excel Básico"
-    },
-    {
-      "id": 8,
-      "image": "assets/img/logos/senai.svg",
-      "badge": "#",
-      "description": "Web 3.0"
-    },
-    {
-      "id": 9,
-      "image": "assets/img/logos/senai.svg",
-      "badge": "#",
-      "description": "Segurança do Trabalho"
     }
   ]
 }
