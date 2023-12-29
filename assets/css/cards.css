@@ -8,7 +8,7 @@
 .card {
   align-items: center;
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
   margin: 1rem;
   padding: 1rem;
   text-align: center;
@@ -77,21 +77,21 @@
 
 /* Bordas dos cards*/
 .border-cyan:hover {
-	box-shadow: 0 0 20px var(--cyan-6);
-	border: solid 1.4px var(--cyan-4);
-	transition: 500ms;
+  box-shadow: 0 0 20px var(--cyan-6);
+  border: solid 1.4px var(--cyan-4);
+  transition: 500ms;
 }
 
 .border-fuchsia:hover {
-	box-shadow: 0 0 20px var(--fuchsia-8);
-	border: solid 1.4px var(--fuchsia-5);
-	transition: 500ms;
+  box-shadow: 0 0 20px var(--fuchsia-8);
+  border: solid 1.4px var(--fuchsia-5);
+  transition: 500ms;
 }
 
 .border-green:hover {
-	box-shadow: 0 0 20px var(--green-5);
-	border: solid  1.4px var(--green-4);
-	transition: 500ms;
+  box-shadow: 0 0 20px var(--green-5);
+  border: solid 1.4px var(--green-4);
+  transition: 500ms;
 }
 
 /* fim */
@@ -102,49 +102,36 @@
 .emoji-handshake,
 .emoji-paper,
 .emoji-pen {
-	width: 60px;
-}
-
-@media screen and (max-width: 600px) {
-
-	.emoji-hand,
-	.emoji-smile,
-	.emoji-handshake,
-	.emoji-paper,
-	.emoji-pen {
-		width: 30px;
-	}
+  width: 60px;
 }
 
 /* fim */
 
-@media screen and (max-width: 374px) {
-  .card-tool {
-    min-width: 150px;
-  }
-  
-  .card-tool:first-child {
-    margin-left: 4.5rem;
-  }
-}
-
 @media screen and (min-width: 375px) {
-  .card-tool {
-    min-width: 180px;
-  }
-  
   .card-tool:first-child {
-    margin-left: 5rem;
+    margin-left: 6.3rem;
   }
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 400px) {
   .card-tool {
-    min-width: 180px;
+    min-width: 200px;
   }
-  
+
   .card-tool:first-child {
-    margin-left: 6.5rem;
+    margin-left: 6rem;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .card-tool:first-child {
+    margin-left: 7rem;
+  }
+}
+
+@media screen and (min-width: 470px) {
+  .card-tool:first-child {
+    margin-left: 8rem;
   }
 }
 
@@ -152,9 +139,39 @@
   .card-tool {
     min-width: 140px;
   }
-  
+
   .card-tool:first-child {
     margin-left: 4rem;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .card-tool:first-child {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .card-tool:first-child {
+    margin-left: 8rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .card-tool:first-child {
+    margin-left: 9rem;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .card-tool:first-child {
+    margin-left: 6rem;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .card-tool:first-child {
+    margin-left: 4.5rem;
   }
 }
 
@@ -165,13 +182,14 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .card-tool {
-    min-width: 140px;
-  }
-  
-  .card-tool:first-child {
-    margin-left: 6rem;
+@media screen and (max-width: 600px) {
+
+  .emoji-hand,
+  .emoji-smile,
+  .emoji-handshake,
+  .emoji-paper,
+  .emoji-pen {
+    width: 30px;
   }
 }
 
