@@ -8,6 +8,8 @@
     O menu de navegação no modo responsivo,
     Scroll da tela, para quando o usuário clicar em algum item no menu poder percorrer pela página,
     Criei os cards de forma dinâmica, buscando as informações para os cards através de um arquivo JSON,
-    E utilizei funções para o carrossel com cards.
+    E utilizei funções para o carrossel com cards na seção de ferramentas, para que o usuário possa passar 
+  para o próximo card ou o anterior, clicando nos botãoes nas laterais. E quando não se está com o mouse 
+  por cima do card, ele passa para o próximo automáticamente.
 </pre>
 <a href="https://yuttyakiko.github.io/portfolio/" target="_blank">Clique aqui</a> para acessar o meu portfolio 😊
