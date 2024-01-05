@@ -1,4 +1,4 @@
-<h1>🚀 Portfolio em desenvolvimento 🌟</h1>
+<h1>🚀 Apresentando meu portfolio profissional 🌟</h1>
 <h2>Seja bem-vindo(a)! 👋</h2>
 <pre>
   Desenvolvi meu portfolio com o intuito de mostrar minhas habilidades para o desenlvolvimento web. 
