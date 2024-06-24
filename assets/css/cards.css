@@ -69,10 +69,13 @@
 }
 
 .card-badge {
+  font-size: 14px;
+  color: var(--gray-2);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 1rem;
 }
 
 /* Bordas dos cards*/

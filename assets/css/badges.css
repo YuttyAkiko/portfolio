@@ -5,10 +5,6 @@
   flex-wrap: wrap;
 }
 
-.card-badge {
-  margin: 1rem;
-}
-
 .badge {
   background-color: transparent;
   border: solid 4px var(--gray-3);

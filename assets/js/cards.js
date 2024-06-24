@@ -135,7 +135,7 @@ function drawCardBadges(item) {
   let text = document.createElement('span');
   card.appendChild(text);
   text.textContent = item.description;
-  text.setAttribute('class', 'txt font-4');
+  text.setAttribute('class', 'font-4');
 }
 
 // Pegando dados e criando os cards a partir de uma arquivo json
