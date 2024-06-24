@@ -111,7 +111,7 @@ header p:nth-child(3), .underline {
     .bars {
         display: inline-block;
         cursor: pointer;
-        margin: 0;
+        margin: 0 1rem;
     }
 
     .bar1, .bar2, .bar3 {
