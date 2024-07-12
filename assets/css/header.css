@@ -28,6 +28,12 @@ header div {
     font-weight: 400;
 }
 
+header > div a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
 header p {
     padding-left: .4rem;
 }
@@ -36,7 +42,7 @@ header p {
 header p:nth-child(2) {
     color: var(--white);
     padding-left: .8rem;
-    text-shadow: -1.5px -.5px 0 var(--green-4);
+    text-shadow: var(--cyan-4) -1.4px 0px, var(--pink-5) 1.4px 0px;
 }
 
 header p:nth-child(3), .underline {
@@ -46,6 +52,7 @@ header p:nth-child(3), .underline {
 /* fim */
 /* Efeito de animação do underline no logo do cabeçalho */
 .underline {
+    font-weight: bolder;
     animation: beat-fade 2s linear infinite;
 }
 
