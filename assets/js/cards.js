@@ -120,14 +120,17 @@ function drawCardBadges(item) {
   div.setAttribute('class', 'badge');
 
   // Link do card
-  let a = document.createElement('a');
-  div.appendChild(a);
-  a.setAttribute('href', item.badge);
-  a.setAttribute('class', 'badge-a');
+  let button = document.createElement('button');
+  div.appendChild(button);
+  button.setAttribute('href', item.badge);
+  button.setAttribute('class', 'badge-btn');
+  button.addEventListener('click', () => {
+    window.open(item.badge, '_blank');
+  })
 
   // Imagem do card
   let image = document.createElement('img');
-  a.appendChild(image);
+  button.appendChild(image);
   image.setAttribute('src', item.image);
   image.setAttribute('class', 'badge-img');
 
