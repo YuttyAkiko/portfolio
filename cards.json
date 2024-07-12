@@ -1,96 +1,110 @@
 {
   "skills": [
     {
-      "id": 1, 
       "image": "https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f600.png", 
       "text": "Tenho boa comunicação, liderança e organização. Sendo assim, fui selecionada através de votação para ser representante de turma no curso de Análise e Desenvolvimento de Sistemas na Escola SENAI."
     },
     {
-      "id": 2, 
       "image": "https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f91d.png", 
-      "text": "Trabalho em equipe utilizando o método Scrum. Sou Scrum Master da minha equipe no projeto que está sendo desenvolvido no curso de Análise e Desenvolvimento de Sistemas."
+      "text": "Trabalho em equipe utilizando o método Scrum. Fui Scrum Master da minha equipe durante o curso para o desenvolvimento do projeto 'Clínica Vision'."
     },
     {
-      "id": 3, 
       "image": "https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f4d1.png", 
-      "text": "Planejamento, organização e comunicação com a equipe utilizando as ferramentas Trello e Miro."
+      "text": "Planejamento, organização e comunicação com a equipe utilizando as ferramentas Trello, Miro e Notion."
     },
     {
-      "id": 4, 
       "image": "https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/2712.png", 
-      "text": "Conhecimento básico em Figma para desenvolvimento de protótipos de alta fidelidade, trabalhando com a equipe em tempo real."
+      "text": "Conhecimento em Figma para desenvolvimento de protótipos de alta fidelidade, trabalhando com a equipe em tempo real."
     }
   ],
   
   "tools": [
     {
-      "id": 1, 
       "image": "assets/img/logos/html.svg", 
       "text": "HTML5",
-      "status": "Junior"
+      "status": "Avançado"
     },
     {
-      "id": 2, 
       "image": "assets/img/logos/css.svg", 
       "text": "CSS3",
-      "status": "Junior"
+      "status": "Avançado"
     },
     {
-      "id": 3, 
+      "image": "assets/img/logos/bootstrap.svg", 
+      "text": "BootStrap",
+      "status": "Avançado"
+    },
+    {
       "image": "assets/img/logos/js.svg", 
       "text": "JavaScript",
       "status": "Junior"
     },
     {
-      "id": 4, 
       "image": "assets/img/logos/node.svg", 
       "text": "Node.js",
       "status": "Iniciante"
     },
     {
-      "id": 5, 
-      "image": "assets/img/logos/git.svg", 
-      "text": "Git",
-      "status": "Junior"
+      "image": "assets/img/logos/react.svg", 
+      "text": "React",
+      "status": "Iniciante"
     },
     {
-      "id": 6, 
-      "image": "assets/img/logos/github.svg", 
-      "text": "GitHub",
-      "status": "Junior"
-    },
-    {
-      "id": 7, 
       "image": "assets/img/logos/py.svg", 
       "text": "Python",
       "status": "Junior"
     },
     {
-      "id": 8, 
+      "image": "assets/img/logos/django.svg", 
+      "text": "Django",
+      "status": "Junior"
+    },
+    {
+      "image": "assets/img/logos/flask.svg", 
+      "text": "Flask",
+      "status": "Junior"
+    },
+    {
+      "image": "assets/img/logos/java.svg", 
+      "text": "Java",
+      "status": "Junior"
+    },
+    {
+      "image": "assets/img/logos/spring-boot.svg", 
+      "text": "Spring Boot",
+      "status": "Junior"
+    },
+    {
+      "image": "assets/img/logos/git.svg", 
+      "text": "Git",
+      "status": "Junior"
+    },
+    {
+      "image": "assets/img/logos/github.svg", 
+      "text": "GitHub",
+      "status": "Junior"
+    },
+    {
       "image": "assets/img/logos/g-cloud.svg", 
       "text": "Google Clould",
       "status": "Fundamentos"
     },
     {
-      "id": 9, 
       "image": "assets/img/logos/aws-tools.svg", 
       "text": "AWS",
       "status": "Associado"
     },
     {
-      "id": 10, 
       "image": "assets/img/logos/azure.svg", 
       "text": "Azure",
       "status": "Fundamentos"
     },
     {
-      "id": 11, 
       "image": "assets/img/logos/figma.svg", 
       "text": "Figma",
       "status": "Design"
     },
     {
-      "id": 12, 
       "image": "assets/img/logos/trello.svg", 
       "text": "Trello",
       "status": "Organização"
@@ -99,7 +113,6 @@
 
   "projects": [
     {
-      "id": 1,
       "title": "Clinica Vision",
       "image": "assets/img/projects/img-clinica-vision.png",
       "description": "Sistema para clínica oftalmológica fictícia, projeto do curso de Análise e Desenvolvimento de Sistemas",
@@ -107,25 +120,13 @@
       "link": "https://clinicavision.pythonanywhere.com/"
     },
     {
-      "id": 2,
       "title": "Decodificador",
-
       "image": "assets/img/projects/img-decodificador.png",
       "description": "Aplicativo para decodificar mensagens em diferentes idiomas.",
       "button": "ACESSAR",
       "link": "https://yuttyakiko.github.io/decodificador/"
     },
     {
-      "id": 3,
-      "title": "Formulário",
-
-      "image": "assets/img/projects/img-form.png",
-      "description": "Formulário simples, em HTML5 e CSS3",
-      "button": "ACESSAR",
-      "link": "https://yuttytk.github.io/formulario/"
-    },
-    {
-      "id": 4,
       "title": "Carta aleatória",
       "image": "assets/img/projects/img-carta-aleatoria.png",
       "description": "Aplicativo que gera uma carta aleatória",
@@ -136,37 +137,31 @@
 
   "badges": [
     {
-      "id": 1,
       "image": "assets/img/logos/alura.svg",
       "badge": "https://cursos.alura.com.br/user/yutty-akiko/fullCertificate/e38b07e698f1e4e5f48d378adbc7a3f2",
       "description": "Formação alura"
     },
     {
-      "id": 2,
       "image": "assets/img/logos/aws-light.svg",
       "badge": "https://www.credly.com/users/yutty-takeyama/badges",
       "description": "Amazon Web Services"
     },
     {
-      "id": 3,
       "image": "assets/img/logos/g-cloud2.svg",
       "badge": "https://www.cloudskillsboost.google/public_profiles/6fd3a35f-5ba1-41c7-bb84-2fa3770007f7",
       "description": "Google Cloud"
     },
     {
-      "id": 4,
       "image": "assets/img/logos/senai.svg",
       "badge": "https://www.sp.senai.br/consulta-certificado?qrcode=00021025/3168830",
       "description": "LGPD"
     },
     {
-      "id": 5,
       "image": "assets/img/logos/senai.svg",
       "badge": "https://www.sp.senai.br/consulta-certificado?qrcode=00021027/3168830",
       "description": "Desvendando o 5G"
     },
     {
-      "id": 6,
       "image": "assets/img/logos/senai.svg",
       "badge": "https://www.sp.senai.br/consulta-certificado?qrcode=00021022/3168830",
       "description": "Economia Circular"

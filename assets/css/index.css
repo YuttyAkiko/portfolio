@@ -71,6 +71,11 @@
 	font-size: 1rem;
 }
 
+.txt-center {
+	text-align: center;
+  margin-bottom: 2rem;
+}
+
 /* fim */
 
 /* Backgrounds */
